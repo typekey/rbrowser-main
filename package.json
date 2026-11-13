@@ -1,0 +1,93 @@
+{
+    "name": "@rbrowser/main",
+    "version": "1.0.70",
+    "type": "module",
+    "description": "RBrowser is a novel RNA-centric data exploration platform",
+    "author": "Zheng Lei <type.zheng@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+        "rbrowser",
+        "genomics",
+        "transcript",
+        "webgl",
+        "bioinformatics",
+        "renderer"
+    ],
+    "homepage": "https://rbrowser.org",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leizheng/rbrowser.git"
+    },
+    "bugs": {
+        "url": "https://github.com/leizheng/rbrowser/issues"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "main": "dist/rbrowser.umd.js",
+    "module": "dist/rbrowser.es.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/rbrowser.es.js",
+            "require": "./dist/rbrowser.umd.js"
+        }
+    },
+    "files": [
+        "dist/",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "dev": "vite --port 3000"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0 || ^19.0.0",
+        "react-dom": "^18.2.0 || ^19.0.0"
+    },
+    "devDependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.1",
+        "@typescript-eslint/eslint-plugin": "^8.0.0",
+        "@typescript-eslint/parser": "^8.0.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "prettier": "^3.3.0",
+        "@gmod/bam": "^7.1.17",
+        "@gmod/bbi": "^8.1.1",
+        "@gmod/bed": "^2.1.10",
+        "@gmod/cram": "^8.0.4",
+        "@gmod/gff": "^2.0.0",
+        "@gmod/indexedfasta": "^5.0.2",
+        "@gmod/tabix": "^3.2.2",
+        "@gmod/vcf": "^7.0.0",
+        "@mui/icons-material": "^7.3.8",
+        "@mui/material": "^7.3.8",
+        "@reactour/tour": "^3.8.0",
+        "@types/lodash": "^4.17.23",
+        "@types/node": "^25.2.0",
+        "@types/react": "^18.2.15",
+        "@types/react-dom": "^18.2.7",
+        "@types/sql.js": "^1.4.11",
+        "@vitejs/plugin-react": "^4.0.3",
+        "buffer": "^6.0.3",
+        "events": "^3.3.0",
+        "generic-filehandle": "^3.4.0",
+        "jsdom": "^27.4.0",
+        "lodash": "^4.17.23",
+        "nanoid": "^5.1.6",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sql.js": "^1.14.1",
+        "sql.js-httpvfs": "^0.8.12",
+        "terser": "^5.46.0",
+        "twgl.js": "^5.5.3",
+        "typescript": "^5.0.2",
+        "vite": "^4.4.5",
+        "vite-plugin-compression": "^0.5.1",
+        "vitest": "^4.0.18",
+        "xlsx": "^0.18.5"
+    }
+}

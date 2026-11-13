@@ -1,0 +1,40 @@
+# ── Source code (never publish) ──────────────────────
+src/
+config/
+scripts/
+test/
+test_v2/
+public/
+document/
+docs/
+
+# ── Build / dev config ──────────────────────────────
+*.ts
+!*.d.ts
+tsconfig*.json
+vite.config.ts
+vite.lib.config.ts
+vite.lib.es.config.ts
+vite.lib.umd.config.ts
+vite.lib.shared.ts
+vitest.config.ts
+.eslintrc*
+.prettierrc*
+.editorconfig
+commitlint.config.*
+
+# ── Dev / CI artifacts ──────────────────────────────
+node_modules/
+.git/
+.github/
+.vscode/
+*.log
+*.tgz
+build-report.json
+coverage/
+
+# ── OS junk ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

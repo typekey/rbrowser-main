@@ -1,0 +1,48 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* ── Thin, minimal scrollbar ────────────────────────────────────── */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
+}
+
+/* Webkit / Blink (Chrome, Edge, Safari) */
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.32);
+}
+
+*::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: start;
+    /* Changed from center to start to allow filling width */
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+#root {
+    width: 100%;
+}

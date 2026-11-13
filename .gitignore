@@ -1,0 +1,93 @@
+# ── Dependencies ─────────────────────────────────────
+node_modules/
+.pnp/
+.pnp.js
+
+# ── Build output (large, regenerable) ────────────────
+dist/
+build/
+out/
+*.tsbuildinfo
+build-report.json
+
+# ── Publish tooling & artifacts (maintainer-local, not public) ───────
+run_publish.sh
+*.tgz
+
+# ── Test sandbox / preview bundles ───────────────────
+test_v2/
+
+# ── Local archives ───────────────────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# ── Environment & secrets ────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# ── Logs ─────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Cache ────────────────────────────────────────────
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+.eslintcache
+.stylelintcache
+
+# ── Coverage ─────────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output/
+
+# ── Test run artifacts (regenerable) ─────────────────
+**/test/**/report/results.json
+**/test/**/report/results.xml
+**/test/**/report/test_execution.log
+
+# ── Editor / OS ──────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Misc ─────────────────────────────────────────────
+*.local
+.history/
+
+# ── Not published to the public repository ───────────
+.github/
+docs/
+document/
+scripts/
+
+# ── Maintainer-only build & publish tooling (private) ─
+publish-public.sh
+run_publish.sh
+vite.lib.config.ts
+vite.lib.es.config.ts
+vite.lib.umd.config.ts
+vite.lib.shared.ts
+tsconfig.lib.json
